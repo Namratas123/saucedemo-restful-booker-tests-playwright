@@ -82,6 +82,7 @@ def test_opening_a_product_shows_details_and_back_returns_to_the_list(inventory_
 
     inventory_page.item_names.filter(has_text=name).click()
     expect(page).to_have_url(re.compile(r"inventory-item\.html"))
+    expect(page.get_by_test_id("back-to-products")).to_be_visible(timeout=10_000)
     expect(page.get_by_test_id("inventory-item-name")).to_have_text(name)
     expect(page.get_by_test_id("inventory-item-price")).to_have_text(f"${price}")
 
