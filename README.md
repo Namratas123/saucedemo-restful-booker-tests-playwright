@@ -69,4 +69,4 @@ The API tests assert what Restful-Booker really does, and comment on it:
 
 ## Status
 
-Completed: test plan, UI tests, API tests, bug reports, AI notes, GitHub Actions workflow.
+Completed: test plan, UI tests, API tests, bug reports, AI notes, GitHub Actions workflow
